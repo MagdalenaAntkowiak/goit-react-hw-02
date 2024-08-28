@@ -28,8 +28,8 @@ const App = () => {
   };
 
   const positiveFeedback = totalFeedback
-    ? Math.round((feedback.good / totalFeedback) * 100)
-    : 0;
+    ? `${Math.round((feedback.good / totalFeedback) * 100)}%`
+    : "0%";
 
   return (
     <div>
